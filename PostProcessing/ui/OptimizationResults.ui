@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OptimizationResults</class>
+ <widget class="QWidget" name="OptimizationResults">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1099</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="2,5">
+   <property name="spacing">
+    <number>20</number>
+   </property>
+   <item>
+    <widget class="myTableWidget" name="tableWidget"/>
+   </item>
+   <item>
+    <widget class="myLineChart" name="widget" native="true"/>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>myTableWidget</class>
+   <extends>QTableWidget</extends>
+   <header location="global">ui.paraSetting.myTableWidget</header>
+  </customwidget>
+  <customwidget>
+   <class>myLineChart</class>
+   <extends>QWidget</extends>
+   <header location="global">mylinechart.py</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
